@@ -40,13 +40,18 @@
             path="/weather/{country}"
             doc:name="Weather Listener" />
 
+        <!-- Log incoming request -->
+        <logger
+            level="INFO"
+            doc:name="Log Incoming Weather Request"
+            message="Weather API request reached Mule flow"/>
+
         <!-- Call OpenWeather API -->
         <http:request
             method="GET"
             config-ref="HTTP_Request_configuration"
             path="/data/2.5/weather"
             doc:name="Weather Request">
-
             <http:query-params><![CDATA[#[output application/java
 ---
 {
@@ -54,7 +59,6 @@
     appid: p('openweather.api.key'),
     units: "metric"
 }]]]></http:query-params>
-
         </http:request>
 
         <!-- Log downstream HTTP status -->
