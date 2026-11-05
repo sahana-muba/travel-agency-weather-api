@@ -5,7 +5,7 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.mycompany</groupId>
+    <groupId>2b624f3c-bc06-4d04-90ef-48200b112b5d</groupId>
     <artifactId>travel-weather-system-api</artifactId>
     <version>1.0.0</version>
     <packaging>mule-application</packaging>
