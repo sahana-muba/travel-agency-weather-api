@@ -34,6 +34,7 @@
                 <configuration>
                     <cloudhub2Deployment>
                         <uri>https://anypoint.mulesoft.com</uri>
+                        <provider>MC</provider>
                         <businessGroupId>2b624f3c-bc06-4d04-90ef-48200b112b5d</businessGroupId>
                         <environment>Sandbox</environment>
                         <target>Cloudhub-US-East-2</target>
