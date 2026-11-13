@@ -5,7 +5,7 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>2b624f3c-bc06-4d04-90ef-48200b112b5d</groupId>
+    <groupId>49a5c82f-4354-4c4d-934f-9e50875ad682</groupId>
     <artifactId>travel-weather-system-api</artifactId>
     <version>1.0.0</version>
     <packaging>mule-application</packaging>
@@ -14,7 +14,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <app.runtime>4.12.5</app.runtime>
+        <app.runtime>4.13.2:7e</app.runtime>
         <mule.maven.plugin.version>4.10.1</mule.maven.plugin.version>
     </properties>
 
@@ -35,7 +35,7 @@
                     <cloudhub2Deployment>
                         <uri>https://anypoint.mulesoft.com</uri>
                         <provider>MC</provider>
-                        <businessGroupId>2b624f3c-bc06-4d04-90ef-48200b112b5d</businessGroupId>
+                        <businessGroupId>49a5c82f-4354-4c4d-934f-9e50875ad682</businessGroupId>
                         <environment>Sandbox</environment>
                         <target>Cloudhub-US-East-2</target>
                         <muleVersion>${app.runtime}</muleVersion>
@@ -68,6 +68,14 @@
             <classifier>mule-plugin</classifier>
         </dependency>
     </dependencies>
+
+    <distributionManagement>
+        <repository>
+            <id>Repository</id>
+            <name>Anypoint Exchange</name>
+            <url>https://maven.anypoint.mulesoft.com/api/v3/organizations/49a5c82f-4354-4c4d-934f-9e50875ad682/maven</url>
+        </repository>
+    </distributionManagement>
 
     <repositories>
         <repository>
